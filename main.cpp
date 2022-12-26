@@ -21,12 +21,12 @@ int main()
     cin>>gen;
     }
     if(gen == 't'){
-        for(int i=dydis;i<=10000000;i*=10){
+        for(int i=dydis;i<=1000000;i*=10){
             pavadinimas = "studentai" + to_string(i) + ".txt";
             Generavimas(i,pavadinimas);
         }
     }
-    for(int i=dydis;i<=1000000;i*=10){
+    for(int i=dydis;i<=10000000;i*=10){
         pavadinimas = "studentai" + to_string(i) + ".txt";
         auto start1 = std::chrono::high_resolution_clock::now();
         Nuskaitymas(stud,kiek,pavadinimas,tikrinimas);
